@@ -27,7 +27,9 @@ function getInfoFromInventos() {
     question.innerText = inventors[count].question
     description.innerText = inventors[count].description
     imgOne.src = "images/photos/"+inventors[count].id+".jpeg"
+    imgOne.title = inventors[count].question
     imgTwo.src = "images/photos/"+inventors[count].id+"F.jpeg"
+    imgTwo.title = inventors[count].question + "F"
     rightImg.src = "images/photos/"+inventors[count].id+".jpeg"
   }
 
@@ -41,7 +43,7 @@ function showInventorInfo(id) {
 
     if(imgId == "imgTapOne" ) {
         const tapImg = document.getElementById("imgOne");
-        if(tapImg.src == "file:///Users/camsluisa/Documents/NASA/HackathonNasa-UbuntuSpace/images/photos/"+inventors[count].id+".jpeg") {
+        if(tapImg.title == inventors[count].question) {
             result.innerText = "Parabéns!"
         } else {
             result.innerText = "Ops!"
@@ -49,7 +51,7 @@ function showInventorInfo(id) {
         
     } else {
         const tapImg = document.getElementById("imgTwo");
-        if(tapImg.src == "images/photos/"+inventors[count].id+".jpeg") {
+        if(tapImg.title == "images/photos/"+inventors[count].id+".jpeg") {
             result.innerText = "Parabéns!"
         } else {
             result.innerText = "Ops!"
