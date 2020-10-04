@@ -23,7 +23,7 @@ function getInfoFromInventos() {
     var description = window.document.getElementById('description')
     var imgOne = window.document.getElementById('imgOne')
     var imgTwo = window.document.getElementById('imgTwo')
-    var rightImg = window.document.getElementById('rightImg')
+    var rightImg = window.document.getElementById('imgInfo')
     var refOne = window.document.getElementById('linkOne')
     var refTwo = window.document.getElementById('linkTwo')
 
