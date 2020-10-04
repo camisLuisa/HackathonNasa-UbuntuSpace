@@ -71,6 +71,10 @@ function showInventorInfo(id) {
         optionsElements.style.display = "none";
         infoElement.style.display = "";
     }
+
+    if(count == 4 && optionsElements.style.display === "none") {
+        showEndMessage()
+    }
 }
 
 function showNextQuestion() {
@@ -78,17 +82,24 @@ function showNextQuestion() {
 
     if(count <= 2){
         count++
+        getInfoFromInventos()
+        showInventorInfo()
     } else if(count == 3) {
         count++
         button.innerText = "Começar Novamente"
-       
-    } else {
+        getInfoFromInventos()
+        showInventorInfo()
+    } else if(count == 4) {        
         count = 0
         button.innerText = "Próximo"
+        getInfoFromInventos()
+        showInventorInfo()
     }
+}
 
-    getInfoFromInventos()
-    showInventorInfo()
+function showEndMessage() {
+    var question = window.document.getElementById('question')
+    question.innerText = "Você conhecia essas pessoas? Esperamos que elas lhe inspirem, na construção de  um mundo melhor! :D "
 }
 
 function resetCount() {
