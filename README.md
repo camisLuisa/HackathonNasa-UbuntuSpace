@@ -1,4 +1,4 @@
-# HackathonNasa UbuntuSpace
+# Hackathon Nasa Ubuntu Space
 
 <h3>Projeto desenvolvido durante o Nasa Internacional Space apps challenge</h3>
 
