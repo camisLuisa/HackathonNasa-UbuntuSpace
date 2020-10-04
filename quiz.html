@@ -15,35 +15,45 @@
         <div class="content">
                 <header>
                     <h2>Ubuntu Quiz</h2>
-                    <p>
+                    <p id="question">
                     Pergunta 1 - Qual dessas pessoas inventou o Elevador?
                     </p>
                 </header>
 
-                <div class="gallery">
+                <div id="options" class="gallery" onclick="showInventorInfo()">
                     <article class="from-left">
-                        <a href="images/fulls/01.jpg" class="image fit"
+                        <a class="image fit"
                         ><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt=""
                         /></a>
                     </article>
                     <article class="from-right">
-                        <a href="images/fulls/02.jpg" class="image fit"
+                        <a class="image fit"
                         ><img src="images/thumbs/02.jpg" title="Airchitecture II" alt=""
                         /></a>
                     </article>
                     <article class="from-left">
-                        <a href="images/fulls/03.jpg" class="image fit"
+                        <a class="image fit"
                         ><img src="images/thumbs/03.jpg" title="Air Lounge" alt=""
                         /></a>
                     </article>
                     <article class="from-right">
-                        <a href="images/fulls/04.jpg" class="image fit"
+                        <a class="image fit"
                         ><img src="images/thumbs/04.jpg" title="Carry on" alt=""
                         /></a>
                     </article>
                 </div>
+
+                <div class="information" id="information" class="gallery">
+                    <article class="inventor-information">
+                        <a class="image fit"
+                        ><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt=""
+                        /></a>
+                        <p>Informações importantes sobre o Inventor(a). Pessoa importante, bla, bla, bla</p>
+                    </article>
+                    <button onclick="showInventorInfo()">Próximo</button>
+                </div>
         </div>
     </section>
-    
+    <script src="assets/js/quiz.js"></script>
 </body>
 </html>
