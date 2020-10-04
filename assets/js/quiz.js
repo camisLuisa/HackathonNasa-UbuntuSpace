@@ -1,25 +1,26 @@
 class Inventor {
-    constructor(id, name, description) {
+    constructor(id, question, description, font) {
       this.id = id
-      this.name = name
+      this.question = question
       this.description = description
+      this.font = font
     }
 }
 
 var infoElement = document.getElementById('information');
 infoElement.style.display = "none";
 
-function createInventorArray() {
-    const inventorOne = new Inventor(1, "Nome1", "Ele inventou várias coisas interessantes.")
-    const inventorTwo = new Inventor(1, "Nome2", "Ele inventou várias coisas interessantes e mais.")
-    const inventorThree = new Inventor(1, "Nome3", "Ele inventou várias coisas interessantes e muito mais.")
-    
-    var inventors = [inventorOne, inventorOne, inventorThree]
+function getInfoFromInventos() {
+    const inventorOne = new Inventor(1, "Considerado por muitos o maior nome da literatura do Brasil:", "Machado de Assis (1839-1908) foi um escritor brasileiro, um dos nomes mais importantes da literatura do século XIX. Escreveu poesias, contos, e romances. Foi também jornalista, teatrólogo, crítico de teatro e crítico literário. Ele presidiu a Academia Brasileira de letras, da qual é membro fundador. Suas obras foram traduzidas para várias línguas.", "https://www.ebiografia.com/vida_obra_principais_escritores_romantismo_brasileiro/https://www.ebiografia.com/machado_assis/")
+
+    var inventors = [inventorOne]
     var question = window.document.getElementById('question')
-    question.innerText = "Pergunta 1 - " + inventors[0].description
+    var description = window.document.getElementById('description')
+    question.innerText = inventors[0].question
+    description.innerText = inventors[0].description
   }
 
-createInventorArray()
+  getInfoFromInventos()
 
 function showInventorInfo() {
     var optionsElements = document.getElementById('options');
