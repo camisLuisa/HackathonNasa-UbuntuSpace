@@ -26,7 +26,7 @@
           <li><a href="#intro">Intro</a></li>
           <li><a href="#one">What I Do</a></li>
           <li><a href="#two">Who I Am</a></li>
-          <li><a href="#work">My Work</a></li>
+          <li><a href="#work">Quiz</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -88,13 +88,16 @@
     <section id="work" class="main style3 primary">
       <div class="content">
         <header>
-          <h2>My Work</h2>
+          <h2>Quiz</h2>
           <p>
-            Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore
-            condimentum. Fusce blandit ultrices sapien, in accumsan orci rhoncus
-            eu. Sed sodales venenatis arcu, id varius justo euismod in.
-            Curabitur egestas consectetur magna vitae.
+            Você consegue adivinhar quem fez o que? Clique no botão para começar. ;)
           </p>
+          <button onclick="goToQuiz()">Começar</button>
+          <script>
+            function goToQuiz() {
+              window.location.href = "quiz.html";
+            }
+          </script>
         </header>
 
         <!-- Gallery  -->
