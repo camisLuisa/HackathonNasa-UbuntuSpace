@@ -71,28 +71,30 @@
 
         <div class="information" id="information" class="gallery">
           <h2 id="result">Parabéns!</h2>
-          <article class="inventor-information">
-            <a class="image fit"
-              ><img
-                id="rightImg"
-                src="images/thumbs/01.jpg"
-                title="The Anonymous Red"
-                alt=""
-            /></a>
-
+          <button id="next" onclick="showNextQuestion()">Próximo</button>
+          <div>
+            <article>
+              <a class="image imgInfo"
+                ><img
+                  id="imgInfo"
+                  src="images/thumbs/01.jpg"
+                  title="The Anonymous Red"
+                  alt=""
+              /></a>
+            </article>
+            <p id="description">
+              Informações importantes sobre o Inventor(a). Pessoa importante, bla,
+              bla, bla
+            </p>
+          </div>
+          <div>
             <h1>Fonte:</h1>
             <ul>
               <li><a id="linkOne" href="texto1">Link 1</a></li>
               <li><a id="linkTwo" href="texto2">Link 2</a></li>
             </ul>
-          </article>
-          <button id="next" onclick="showNextQuestion()">Próximo</button>
+          </div>
         </div>
-
-        <p id="description">
-          Informações importantes sobre o Inventor(a). Pessoa importante, bla,
-          bla, bla
-        </p>
       </div>
     </section>
     <script src="assets/js/quiz.js"></script>

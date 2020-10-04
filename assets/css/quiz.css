@@ -5,3 +5,14 @@ body {
 .information {
     margin: auto;
 }
+
+.imgInfo {
+  float: left;
+  width: 60%;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.next {
+    margin-bottom: 100px;
+}
