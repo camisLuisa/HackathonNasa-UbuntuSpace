@@ -26,10 +26,10 @@ function showInventorInfo() {
     var infoElement = document.getElementById('information');
 
     if (optionsElements.style.display === "none") {
-        optionsElements.style.display = "block";
+        optionsElements.style.display = "";
         infoElement.style.display = "none";
     } else {
         optionsElements.style.display = "none";
-        infoElement.style.display = "block";
+        infoElement.style.display = "";
     }
   }
