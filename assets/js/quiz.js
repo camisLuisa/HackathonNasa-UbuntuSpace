@@ -29,11 +29,11 @@ function getInfoFromInventos() {
 
     question.innerText = inventors[count].question
     description.innerText = inventors[count].description
-    imgOne.src = "images/photos/"+inventors[count].id+".jpeg"
+    imgOne.src = "images/photos/"+inventors[count].id+".png"
     imgOne.title = inventors[count].question
-    imgTwo.src = "images/photos/"+inventors[count].id+"F.jpeg"
+    imgTwo.src = "images/photos/"+inventors[count].id+"F.png"
     imgTwo.title = inventors[count].question + "F"
-    rightImg.src = "images/photos/"+inventors[count].id+".jpeg"
+    rightImg.src = "images/photos/"+inventors[count].id+".png"
 
     refOne.href = inventors[count].fontOne
     refTwo.href = inventors[count].fontTwo
