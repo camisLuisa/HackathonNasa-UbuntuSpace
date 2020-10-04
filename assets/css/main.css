@@ -754,6 +754,10 @@ table {
   padding: 3.5em 2.5em 3.5em 2.5em;
 }
 
+.box.style3 {
+  padding: 3.5em 2.5em 3.5em 2.5em;
+}
+
 @media screen and (max-width: 736px) {
   .box {
     padding: 1em;
@@ -2407,4 +2411,7 @@ body.is-touch .main {
   #contact .box {
     padding: 1em 1em 2em 1em;
   }
+}
+.p_text {
+  text-align: justify;
 }
