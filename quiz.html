@@ -1,69 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Quiz</title>
+  <head>
+    <link
+      rel="sortcut icon"
+      href="./images/logo-3-ícone.ico"
+      type="image/x-icon"
+    />
+    <title>Ubuntu Space</title>
     <meta charset="utf-8" />
     <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, user-scalable=no"
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/quiz.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header id="header">
-        <h1>Ubuntu Space</h1>
-        <nav>
-            <ul>
-            <li><a href="index.html#intro">Início</a></li>
-            <li><a href="index.html#one">Sobre</a></li>
-            <li><a href="index.html#two">Jogo</a></li>
-            <li><a href="index.html#work">Quiz</a></li>
-            <li><a href="index.html#book">Livro</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="index.html#intro">Início</a></li>
+          <li><a href="index.html#one">Sobre</a></li>
+          <li><a href="index.html#two">Jogo</a></li>
+          <li><a href="index.html#work">Quiz</a></li>
+          <li><a href="index.html#book">Livro</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section id="work" class="main style3 primary">
-        <div class="content">
-                <header>
-                    <h2>Ubuntu Quiz</h2>
-                    <p id="question">
-                    Pergunta 1 - Qual dessas pessoas inventou o Elevador?
-                    </p>
-                </header>
+      <div class="content">
+        <header>
+          <h2>Ubuntu Quiz</h2>
+          <p id="question">
+            Pergunta 1 - Qual dessas pessoas inventou o Elevador?
+          </p>
+        </header>
 
-                <div id="options" class="gallery">
-                    <article class="from-left" id="imgTapOne" onclick="showInventorInfo(this.id)">
-                        <a class="image fit"
-                        ><img class="img" id="imgOne" src="images/thumbs/01.jpg" title="Img 1" alt=""
-                        /></a>
-                    </article>
-                    <article class="from-right" id="imgTapTwo" onclick="showInventorInfo(this.id)">
-                        <a class="image fit"
-                        ><img class="img" id="imgTwo" src="images/thumbs/02.jpg" title="Img 2" alt=""
-                        /></a>
-                    </article>
-                </div>
-
-                <div class="information" id="information" class="gallery">
-                    <h2 id="result">Parabéns!</h2>
-                    <article class="inventor-information">
-                        <a class="image fit"
-                        ><img id="rightImg" src="images/thumbs/01.jpg" title="The Anonymous Red" alt=""
-                        /></a>
-                        <p id="description">Informações importantes sobre o Inventor(a). Pessoa importante, bla, bla, bla</p>
-                        <h1>Fonte:</h1>
-                        <ul>
-                            <li><a id="linkOne" href="texto1">Link 1</a></li>
-                            <li><a id="linkTwo" href="texto2">Link 2</a></li>
-                        </ul>
-                    </article>
-                    <button id="next" onclick="showNextQuestion()">Próximo</button>
-                </div>
+        <div id="options" class="gallery">
+          <article
+            class="from-left"
+            id="imgTapOne"
+            onclick="showInventorInfo(this.id)"
+          >
+            <a class="image fit"
+              ><img
+                class="img"
+                id="imgOne"
+                src="images/thumbs/01.jpg"
+                title="Img 1"
+                alt=""
+            /></a>
+          </article>
+          <article
+            class="from-right"
+            id="imgTapTwo"
+            onclick="showInventorInfo(this.id)"
+          >
+            <a class="image fit"
+              ><img
+                class="img"
+                id="imgTwo"
+                src="images/thumbs/02.jpg"
+                title="Img 2"
+                alt=""
+            /></a>
+          </article>
         </div>
+
+        <div class="information" id="information" class="gallery">
+          <h2 id="result">Parabéns!</h2>
+          <article class="inventor-information">
+            <a class="image fit"
+              ><img
+                id="rightImg"
+                src="images/thumbs/01.jpg"
+                title="The Anonymous Red"
+                alt=""
+            /></a>
+            <p id="description">
+              Informações importantes sobre o Inventor(a). Pessoa importante,
+              bla, bla, bla
+            </p>
+            <h1>Fonte:</h1>
+            <ul>
+              <li><a id="linkOne" href="texto1">Link 1</a></li>
+              <li><a id="linkTwo" href="texto2">Link 2</a></li>
+            </ul>
+          </article>
+          <button id="next" onclick="showNextQuestion()">Próximo</button>
+        </div>
+      </div>
     </section>
     <script src="assets/js/quiz.js"></script>
-</body>
+  </body>
 </html>
