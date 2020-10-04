@@ -33,9 +33,33 @@ function getInfoFromInventos() {
 
   getInfoFromInventos()
 
-function showInventorInfo() {
+function showInventorInfo(id) {
+    var imgId = id
+    console.log(imgId)
     var optionsElements = document.getElementById('options');
     var infoElement = document.getElementById('information');
+    var result = document.getElementById('result');
+
+    if(imgId == "imgTapOne" ) {
+        const tapImg = document.getElementById("imgOne");
+        console.log("Oi")
+        console.log(tapImg.src)
+        if(tapImg.src == "file:///Users/camsluisa/Documents/NASA/HackathonNasa-UbuntuSpace/images/photos/"+inventors[count].id+".jpeg") {
+            result.innerText = "Parabéns!"
+        } else {
+            result.innerText = "Ops!"
+        }
+        
+    } else {
+        const tapImg = document.getElementById("imgTwo");
+        console.log("HAHAHAHAHA")
+        console.log(tapImg.src)
+        if(tapImg.src == "images/photos/"+inventors[count].id+".jpeg") {
+            result.innerText = "Parabéns!"
+        } else {
+            result.innerText = "Ops!"
+        }
+    }
 
     if (optionsElements.style.display === "none") {
         optionsElements.style.display = "";

@@ -20,20 +20,21 @@
                     </p>
                 </header>
 
-                <div id="options" class="gallery" onclick="showInventorInfo()">
-                    <article class="from-left">
+                <div id="options" class="gallery">
+                    <article class="from-left" id="imgTapOne" onclick="showInventorInfo(this.id)">
                         <a class="image fit"
-                        ><img id="imgOne" src="images/thumbs/01.jpg" title="Img 1" alt=""
+                        ><img class="img" id="imgOne" src="images/thumbs/01.jpg" title="Img 1" alt=""
                         /></a>
                     </article>
-                    <article class="from-right">
+                    <article class="from-right" id="imgTapTwo" onclick="showInventorInfo(this.id)">
                         <a class="image fit"
-                        ><img id="imgTwo" src="images/thumbs/02.jpg" title="Img 2" alt=""
+                        ><img class="img" id="imgTwo" src="images/thumbs/02.jpg" title="Img 2" alt=""
                         /></a>
                     </article>
                 </div>
 
                 <div class="information" id="information" class="gallery">
+                    <h2 id="result">Parabéns!</h2>
                     <article class="inventor-information">
                         <a class="image fit"
                         ><img id="rightImg" src="images/thumbs/01.jpg" title="The Anonymous Red" alt=""
