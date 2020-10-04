@@ -20,8 +20,15 @@ var inventors = [inventorOne, inventorTwo, inventorThree, inventorFour, inventor
 function getInfoFromInventos() {
     var question = window.document.getElementById('question')
     var description = window.document.getElementById('description')
+    var imgOne = window.document.getElementById('imgOne')
+    var imgTwo = window.document.getElementById('imgTwo')
+    var rightImg = window.document.getElementById('rightImg')
+
     question.innerText = inventors[count].question
     description.innerText = inventors[count].description
+    imgOne.src = "images/photos/"+inventors[count].id+".jpeg"
+    imgTwo.src = "images/photos/"+inventors[count].id+"F.jpeg"
+    rightImg.src = "images/photos/"+inventors[count].id+".jpeg"
   }
 
   getInfoFromInventos()
